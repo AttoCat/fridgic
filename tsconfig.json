@@ -4,6 +4,13 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "paths": {
+      "void/db": ["./.void/db.d.ts"],
+      "void/routes": ["./.void/routes.d.ts"],
+      "@schema": ["./db/schema.ts"],
+      "@schema/*": ["./db/schema/*"],
+      "@lib/*": ["./lib/*"]
+    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
