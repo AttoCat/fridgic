@@ -1,0 +1,27 @@
+{
+  "name": "fridgic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.5.1",
+    "hono": "^4.13.18",
+    "solid-js": "^1.9.19"
+  },
+  "devDependencies": {
+    "@void/solid": "1.1.12",
+    "typescript": "^7.0.2",
+    "vite": "npm:@voidzero-dev/vite-plus-core@^1.6.0",
+    "vite-plus": "^1.6.0",
+    "void": "^1.9.1"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@^1.2.0"
+  }
+}
