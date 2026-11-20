@@ -229,7 +229,7 @@ export function assertInvariants(lot: StockLotBase): asserts lot is StockLot {
   if ((lot.expiryType === null) !== (lot.expiresOn === null))
     fail('Neither or both of expiryType and expiresOn must be null.');
   if (lot.expirySource === 'user_input' && lot.expiresOn === null)
-    fail('when expirySource is user_input, expiredOn must not be null.');
+    fail('when expirySource is user_input, expiresOn must not be null.');
 }
 
 const checked = <T extends StockLotBase>(lot: T): T & StockLot => {
